@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<type-mapping>
+		<sql-type jdbc-type="2004" hibernate-type="byte[]" />
+		<sql-type jdbc-type="2005" hibernate-type="string" />
+	</type-mapping>
+
+	<table-filter package="org.turtlex.domain" match-name="access_control" />
+	<table-filter package="org.turtlex.domain" match-name="user" />
+	<table-filter package="org.turtlex.domain" match-name="role" />
+	<table-filter package="org.turtlex.domain" match-name="organization" />
+	<table-filter package="org.turtlex.domain" match-name="app_instance" />
+
+	<table name="access_control">
+		<column name="id">
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="app_instance_id">
+			<meta attribute="use-in-equals">true</meta>
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="organization_id">
+			<meta attribute="use-in-equals">true</meta>
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="role_id">
+			<meta attribute="use-in-equals">true</meta>
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="user_id">
+			<meta attribute="use-in-equals">true</meta>
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+	</table>
+
+	<table name="user">
+		<column name="id">
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="login_id">
+			<meta attribute="use-in-equals">true</meta>
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+	</table>
+
+	<table name="role">
+		<column name="id">
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="role_name">
+			<meta attribute="use-in-equals">true</meta>
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="description">
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+	</table>
+
+	<table name="organization">
+		<column name="id">
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="organization_name">
+			<meta attribute="use-in-equals">true</meta>
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+	</table>
+
+	<table name="app_instance">
+		<column name="id">
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+		<column name="app_name">
+			<meta attribute="use-in-equals">true</meta>
+			<meta attribute="use-in-tostring">true</meta>
+		</column>
+	</table>
+</hibernate-reverse-engineering>

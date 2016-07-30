@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../spring/exp.iml" filepath="$PROJECT_DIR$/../../../spring/exp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa-console.iml" filepath="$PROJECT_DIR$/jpa-console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../reveng/reveng.iml" filepath="$PROJECT_DIR$/../reveng/reveng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../reveng/reveng-domain/reveng-domain.iml" filepath="$PROJECT_DIR$/../reveng/reveng-domain/reveng-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../reveng/reveng-strategy/reveng-strategy.iml" filepath="$PROJECT_DIR$/../reveng/reveng-strategy/reveng-strategy.iml" />
+    </modules>
+  </component>
+</project>
